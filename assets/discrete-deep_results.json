@@ -1,0 +1,122 @@
+[
+  {
+    "run": "dqn",
+    "episodes": 300,
+    "first_success": null,
+    "train_success_last50": 0.0,
+    "eval_success": 0.0,
+    "eval_return": -200.0,
+    "eval_steps": 200.0,
+    "wall_time_s": 197.37892937660217
+  },
+  {
+    "run": "dqn +shaping",
+    "episodes": 300,
+    "first_success": 65,
+    "train_success_last50": 1.0,
+    "eval_success": 0.95,
+    "eval_return": -159.8,
+    "eval_steps": 159.8,
+    "wall_time_s": 204.1653733253479
+  },
+  {
+    "run": "double-dqn",
+    "episodes": 300,
+    "first_success": 165,
+    "train_success_last50": 0.04,
+    "eval_success": 0.8,
+    "eval_return": -141.8,
+    "eval_steps": 141.8,
+    "wall_time_s": 196.29737830162048
+  },
+  {
+    "run": "double-dqn +shaping",
+    "episodes": 300,
+    "first_success": 65,
+    "train_success_last50": 1.0,
+    "eval_success": 1.0,
+    "eval_return": -123.35,
+    "eval_steps": 123.35,
+    "wall_time_s": 142.51556015014648
+  },
+  {
+    "run": "dueling-dqn",
+    "episodes": 300,
+    "first_success": null,
+    "train_success_last50": 0.0,
+    "eval_success": 0.0,
+    "eval_return": -200.0,
+    "eval_steps": 200.0,
+    "wall_time_s": 274.4228022098541
+  },
+  {
+    "run": "dueling-dqn +shaping",
+    "episodes": 300,
+    "first_success": 65,
+    "train_success_last50": 1.0,
+    "eval_success": 1.0,
+    "eval_return": -138.3,
+    "eval_steps": 138.3,
+    "wall_time_s": 149.2401213645935
+  },
+  {
+    "run": "reinforce",
+    "episodes": 500,
+    "first_success": null,
+    "train_success_last50": 0.0,
+    "eval_success": 0.0,
+    "eval_return": -200.0,
+    "eval_steps": 200.0,
+    "wall_time_s": 45.20814108848572
+  },
+  {
+    "run": "reinforce +shaping",
+    "episodes": 500,
+    "first_success": 238,
+    "train_success_last50": 0.24,
+    "eval_success": 0.95,
+    "eval_return": -129.25,
+    "eval_steps": 129.25,
+    "wall_time_s": 33.584043979644775
+  },
+  {
+    "run": "a2c",
+    "episodes": 500,
+    "first_success": null,
+    "train_success_last50": 0.0,
+    "eval_success": 0.0,
+    "eval_return": -200.0,
+    "eval_steps": 200.0,
+    "wall_time_s": 82.85534811019897
+  },
+  {
+    "run": "a2c +shaping",
+    "episodes": 500,
+    "first_success": 371,
+    "train_success_last50": 1.0,
+    "eval_success": 1.0,
+    "eval_return": -141.1,
+    "eval_steps": 141.1,
+    "wall_time_s": 79.74439191818237
+  },
+  {
+    "run": "ppo",
+    "episodes": 500,
+    "first_success": 198,
+    "train_success_last50": 1.0,
+    "eval_success": 1.0,
+    "eval_return": -142.2,
+    "eval_steps": 142.2,
+    "wall_time_s": 75.75401449203491
+  },
+  {
+    "run": "ppo +shaping",
+    "episodes": 500,
+    "first_success": 135,
+    "train_success_last50": 1.0,
+    "eval_success": 1.0,
+    "eval_return": -140.0,
+    "eval_steps": 140.0,
+    "wall_time_s": 203.36498880386353
+  }
+]

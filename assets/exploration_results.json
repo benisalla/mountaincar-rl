@@ -1,0 +1,62 @@
+[
+  {
+    "run": "dqn eps exp",
+    "episodes": 300,
+    "first_success": 250,
+    "train_success_last50": 0.0,
+    "eval_success": 0.0,
+    "eval_return": -200.0,
+    "eval_steps": 200.0,
+    "wall_time_s": 77.21395230293274
+  },
+  {
+    "run": "dqn +count",
+    "episodes": 300,
+    "first_success": 59,
+    "train_success_last50": 1.0,
+    "eval_success": 1.0,
+    "eval_return": -119.45,
+    "eval_steps": 119.45,
+    "wall_time_s": 61.860085248947144
+  },
+  {
+    "run": "dqn +rnd",
+    "episodes": 300,
+    "first_success": 250,
+    "train_success_last50": 1.0,
+    "eval_success": 1.0,
+    "eval_return": -152.75,
+    "eval_steps": 152.75,
+    "wall_time_s": 84.0376124382019
+  },
+  {
+    "run": "dqn +per +n3",
+    "episodes": 300,
+    "first_success": 98,
+    "train_success_last50": 0.46,
+    "eval_success": 0.0,
+    "eval_return": -200.0,
+    "eval_steps": 200.0,
+    "wall_time_s": 103.87995100021362
+  },
+  {
+    "run": "dqn +height shaping",
+    "episodes": 300,
+    "first_success": 59,
+    "train_success_last50": 0.28,
+    "eval_success": 0.9,
+    "eval_return": -149.1,
+    "eval_steps": 149.1,
+    "wall_time_s": 73.1028470993042
+  },
+  {
+    "run": "q-learning +energy shaping",
+    "episodes": 3000,
+    "first_success": 38,
+    "train_success_last50": 1.0,
+    "eval_success": 1.0,
+    "eval_return": -132.3,
+    "eval_steps": 132.3,
+    "wall_time_s": 16.331592082977295
+  }
+]

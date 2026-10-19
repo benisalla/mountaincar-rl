@@ -1,0 +1,102 @@
+[
+  {
+    "run": "ppo",
+    "episodes": 60,
+    "first_success": null,
+    "train_success_last50": 0.0,
+    "eval_success": 0.0,
+    "eval_return": -0.0008253261161514256,
+    "eval_steps": 999.0,
+    "wall_time_s": 59.39163613319397
+  },
+  {
+    "run": "ppo +shaping",
+    "episodes": 60,
+    "first_success": 3,
+    "train_success_last50": 1.0,
+    "eval_success": 1.0,
+    "eval_return": 94.68492788496258,
+    "eval_steps": 149.9,
+    "wall_time_s": 20.37717032432556
+  },
+  {
+    "run": "ddpg",
+    "episodes": 30,
+    "first_success": null,
+    "train_success_last50": 0.0,
+    "eval_success": 0.0,
+    "eval_return": -0.012709926952145604,
+    "eval_steps": 999.0,
+    "wall_time_s": 105.27868103981018
+  },
+  {
+    "run": "ddpg +shaping",
+    "episodes": 30,
+    "first_success": 6,
+    "train_success_last50": 0.8333333333333334,
+    "eval_success": 1.0,
+    "eval_return": 90.15178697806745,
+    "eval_steps": 100.6,
+    "wall_time_s": 6.413934230804443
+  },
+  {
+    "run": "td3",
+    "episodes": 30,
+    "first_success": null,
+    "train_success_last50": 0.0,
+    "eval_success": 0.0,
+    "eval_return": -0.2650144259710576,
+    "eval_steps": 999.0,
+    "wall_time_s": 72.98482346534729
+  },
+  {
+    "run": "td3 +shaping",
+    "episodes": 30,
+    "first_success": 6,
+    "train_success_last50": 0.8333333333333334,
+    "eval_success": 1.0,
+    "eval_return": 93.08160120038119,
+    "eval_steps": 84.6,
+    "wall_time_s": 10.780815124511719
+  },
+  {
+    "run": "sac",
+    "episodes": 30,
+    "first_success": null,
+    "train_success_last50": 0.0,
+    "eval_success": 0.0,
+    "eval_return": -8.000728602617538e-05,
+    "eval_steps": 999.0,
+    "wall_time_s": 119.70124340057373
+  },
+  {
+    "run": "sac +shaping",
+    "episodes": 30,
+    "first_success": 6,
+    "train_success_last50": 0.8333333333333334,
+    "eval_success": 1.0,
+    "eval_return": 92.27495781018685,
+    "eval_steps": 108.85,
+    "wall_time_s": 22.680275917053223
+  },
+  {
+    "run": "cem",
+    "episodes": 100,
+    "first_success": 7,
+    "train_success_last50": 0.92,
+    "eval_success": 1.0,
+    "eval_return": 96.88408153043574,
+    "eval_steps": 289.5,
+    "wall_time_s": 0.7462959289550781
+  },
+  {
+    "run": "cem +shaping",
+    "episodes": 100,
+    "first_success": 7,
+    "train_success_last50": 0.92,
+    "eval_success": 1.0,
+    "eval_return": 95.28742106368978,
+    "eval_steps": 404.05,
+    "wall_time_s": 1.1836717128753662
+  }
+]

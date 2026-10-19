@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mountaincar-rl"
+version = "0.1.0"
+description = "MountainCar (discrete and continuous) solved with every RL family: discretized Q-learning and SARSA, tile coding, DQN variants, REINFORCE, A2C, PPO, DDPG, TD3, SAC and CEM, with exploration tricks compared on the same sparse-reward task."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = [
+  "reinforcement-learning", "mountaincar", "gymnasium", "q-learning", "sarsa", "tile-coding",
+  "dqn", "double-dqn", "dueling-dqn", "prioritized-replay", "reinforce", "a2c", "ppo", "ddpg", "td3",
+  "sac", "cross-entropy-method", "exploration", "reward-shaping", "rnd", "pytorch", "educational",
+]
+dependencies = [
+  "numpy>=1.24",
+  "torch>=2.4",
+  "gymnasium[classic-control]>=1.0",
+  "matplotlib>=3.7",
+  "pillow>=9.0",
+]
+
+[project.scripts]
+mountaincar-train = "mountaincar_rl.train:main"
+mountaincar-play = "mountaincar_rl.play:main"
+mountaincar-eval = "mountaincar_rl.evaluate:main"
+mountaincar-compare = "mountaincar_rl.compare:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9", "nbformat>=5.10"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mountaincar_rl"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["notebooks/*.ipynb"]
+
+# uv users get the CPU-only PyTorch wheels (pip ignores this table and installs the default wheels).
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+ignore = ["B905", "B023"]

@@ -1,0 +1,52 @@
+[
+  {
+    "run": "q-learning",
+    "episodes": 3000,
+    "first_success": 215,
+    "train_success_last50": 0.7,
+    "eval_success": 0.55,
+    "eval_return": -161.8,
+    "eval_steps": 161.8,
+    "wall_time_s": 13.913169145584106
+  },
+  {
+    "run": "sarsa",
+    "episodes": 3000,
+    "first_success": 57,
+    "train_success_last50": 0.94,
+    "eval_success": 0.9,
+    "eval_return": -158.0,
+    "eval_steps": 158.0,
+    "wall_time_s": 10.504082679748535
+  },
+  {
+    "run": "tile-coding (sarsa)",
+    "episodes": 300,
+    "first_success": 23,
+    "train_success_last50": 1.0,
+    "eval_success": 0.95,
+    "eval_return": -136.8,
+    "eval_steps": 136.8,
+    "wall_time_s": 3.5604138374328613
+  },
+  {
+    "run": "tile-coding (q)",
+    "episodes": 300,
+    "first_success": 27,
+    "train_success_last50": 1.0,
+    "eval_success": 1.0,
+    "eval_return": -112.6,
+    "eval_steps": 112.6,
+    "wall_time_s": 5.866502523422241
+  },
+  {
+    "run": "cem",
+    "episodes": 300,
+    "first_success": 21,
+    "train_success_last50": 1.0,
+    "eval_success": 1.0,
+    "eval_return": -113.25,
+    "eval_steps": 113.25,
+    "wall_time_s": 2.03360652923584
+  }
+]
