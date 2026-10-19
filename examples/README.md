@@ -10,7 +10,7 @@ it. Each is one command, runs on a CPU with small defaults, and writes its figur
 | [02_tabular_q_learning_and_sarsa.py](02_tabular_q_learning_and_sarsa.py) | Q-learning and SARSA on a 16 x 16 grid with an optimistic table: visitation, value and policy maps | 1-4 minutes |
 | [03_tile_coding.py](03_tile_coding.py) | semi-gradient SARSA with 8 tilings (Sutton & Barto 10.1), its maps and a GIF of the car | under a minute |
 | [04_dqn_with_and_without_shaping.py](04_dqn_with_and_without_shaping.py) | the same Double DQN on the raw sparse reward and with energy shaping | about 2 minutes |
-| [05_policy_gradient_and_cem.py](05_policy_gradient_and_cem.py) | REINFORCE, A2C, PPO (with shaping) and the cross-entropy method, one comparison table | about 5 minutes |
+| [05_policy_gradient_and_cem.py](05_policy_gradient_and_cem.py) | REINFORCE, A2C, PPO (with shaping) and the cross-entropy method, one comparison table | about 3 minutes |
 | [06_continuous_control.py](06_continuous_control.py) | SAC, TD3, DDPG, PPO and CEM on MountainCarContinuous-v0 | about a minute |
 
 ```bash

@@ -7,7 +7,7 @@ the gradient carries no signal: try `shaping="none"`). CEM needs no shaping: it 
 Each method uses its recommended budget (500 episodes for the gradient methods: A2C and
 REINFORCE first reach the flag only after 200-400 episodes, 300 for CEM).
 
-Run from the repo root:  python examples/05_policy_gradient_and_cem.py   (about 5 minutes)
+Run from the repo root:  python examples/05_policy_gradient_and_cem.py   (about 3 minutes)
 """
 
 from mountaincar_rl.config import recommended_config
